@@ -10,3 +10,5 @@
 ;;Set visible bell to disable annoying beeps
 (setq visible-bell t)
 
+(load-theme 'tango-dark)
+
