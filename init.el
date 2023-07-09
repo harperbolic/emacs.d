@@ -1,8 +1,6 @@
 ;;Load paths
 (add-to-list 'load-path "~/.emacs.d/require/")
 
-
-
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1)     ;Disable visible scrollbar
@@ -16,6 +14,9 @@
 (setq visible-bell t)
 
 (load-theme 'tango-dark)
+
+;;ESC quit prompts
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 
 ;;Init packages sources
@@ -36,6 +37,11 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(use-package command-log-mode)
+
+;;(use-package-ivy
+ 
+;; (ivy-mode 1))
 
 
 
@@ -46,7 +52,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(use-package)))
+ '(package-selected-packages '(command-log-mode use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
