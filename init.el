@@ -1,3 +1,8 @@
+;;Load paths
+(add-to-list 'load-path "~/.emacs.d/require/")
+
+
+
 (setq inhibit-startup-message t)
 
 (scroll-bar-mode -1)     ;Disable visible scrollbar
