@@ -1,4 +1,4 @@
-;;Load paths
+fri;;Load paths
 (add-to-list 'load-path "~/.emacs.d/require/")
 
 (setq inhibit-startup-message t)
@@ -14,10 +14,6 @@
 (setq visible-bell t)
 
 (load-theme 'tango-dark)
-
-;;ESC quit prompts
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-
 
 ;;Init packages sources
 (require 'package)
