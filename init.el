@@ -1,4 +1,4 @@
-fri;;Load paths
+;;Load paths
 (add-to-list 'load-path "~/.emacs.d/require/")
 
 (setq inhibit-startup-message t)
