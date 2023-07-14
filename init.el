@@ -36,9 +36,9 @@
 (use-package command-log-mode)
 
 ;;init exwm
-(require 'exwm)
-(require 'exwm-config)
-(exwm-config-default)
+;(require 'exwm)
+;(require 'exwm-config)
+;(exwm-config-default)
 
 
 
