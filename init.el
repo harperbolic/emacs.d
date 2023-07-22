@@ -7,6 +7,7 @@
 (tool-bar-mode -1)       ;Disable tooltip bar
 (tooltip-mode -1)        ;Disable tooltips
 (set-fringe-mode -1)     ;Give breathing room
+(global-linum-mode t)    ;Display line num
 
 (menu-bar-mode -1)       ;Disable menu bar
 
