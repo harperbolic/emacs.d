@@ -13,7 +13,7 @@
 ;;Set visible bell to disable annoying beeps
 (setq visible-bell t)
 
-(load-theme 'tango-dark)
+(load-theme 'dracula t)
 
 ;;Init packages sources
 (require 'package)
