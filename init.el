@@ -14,12 +14,23 @@
 (global-hl-line-mode t)  ;Display line highlight
 
 
+;;scroll settings
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 1))   ;scroll 2 lines
+      mouse-wheel-progressive-speed nil              ;enable scroll acceleration
+      mouse-wheel-follow-mouse 't                    ;scroll on cursor
+      scroll-step 1)                                 ;keyboard roll 1
 
+;;justification settings
+(global-visual-line-mode t)
+
+;;sound settings
 (setq visible-bell t)    ;Visible bell to disable annoying beeps
 
 ;;Selection mode
 (delete-selection-mode t);Selection delete
 
+;;backups settings
+(setq backup-directory-alist '(("." . "~/.saves")))
 
 ;;Load theme
 (load-theme 'dracula t)
