@@ -3,19 +3,29 @@
 
 (setq inhibit-startup-message t)
 
+;;Display settings
 (scroll-bar-mode -1)     ;Disable visible scrollbar
 (tool-bar-mode -1)       ;Disable tooltip bar
 (tooltip-mode -1)        ;Disable tooltips
-(set-fringe-mode -1)     ;Give breathing room
+(set-fringe-mode 10)     ;Give breathing room
 (global-linum-mode t)    ;Display line num
-
 (menu-bar-mode -1)       ;Disable menu bar
+(column-number-mode t)   ;Display colum
+(global-hl-line-mode t)  ;Display line highlight
 
-;;Set visible bell to disable annoying beeps
-(setq visible-bell t)
 
+
+(setq visible-bell t)    ;Visible bell to disable annoying beeps
+
+;;Selection mode
+(delete-selection-mode t);Selection delete
+
+
+;;Load theme
 (load-theme 'dracula t)
 
+
+;;packages
 ;;Init packages sources
 (require 'package)
 
