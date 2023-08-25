@@ -7,14 +7,14 @@
 (scroll-bar-mode -1)     ;Disable visible scrollbar
 (tool-bar-mode -1)       ;Disable tooltip bar
 (tooltip-mode -1)        ;Disable tooltips
-<<<<<<< HEAD
+
+;;text display settings
 (set-fringe-mode 10)     ;Give breathing room
-(global-linum-mode t)    ;Display line num
-=======
+(line-number-mode t)    ;Display line num
 (set-fringe-mode -1)     ;Give breathing room
 (global-display-line-numbers-mode 1)    ;Display line num
 
->>>>>>> 5331ddd (a)
+;;hud settings
 (menu-bar-mode -1)       ;Disable menu bar
 (column-number-mode t)   ;Display colum
 (global-hl-line-mode t)  ;Display line highlight
