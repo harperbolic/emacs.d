@@ -39,7 +39,7 @@
 (setq backup-directory-alist '(("." . "~/.saves")))
 
 ;;Load theme
-(load-theme 'moe-theme t)
+(load-theme 'moe-dark t)
 
 
 ;;packages
