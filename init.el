@@ -54,6 +54,20 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
+;;straight.el git package source
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 6))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
 ;;Init non-linux platforms
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
@@ -76,7 +90,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(exwm ivy command-log-mode use-package)))
+ '(package-selected-packages '(auto-complete exwm ivy command-log-mode use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -84,7 +98,12 @@
  ;; If there is more than one, they won't work right.
  )
 
+;;autocomplete
+(ac-config-default)
 
 ;;Discord rich presence
 (require 'elcord)
 (elcord-mode)
+
+;;Unity compatibility
+
