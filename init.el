@@ -68,5 +68,5 @@
 ;(exwm-config-default)
  
 ;;Discord rich presence
-;(require 'elcord)
-;(elcord-mode)
+(require 'elcord)
+(elcord-mode)
