@@ -69,4 +69,5 @@
  
 ;;Discord rich presence
 (require 'elcord)
+(setq elcord-display-buffer-details nil)
 (elcord-mode)
