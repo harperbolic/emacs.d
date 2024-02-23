@@ -38,9 +38,6 @@
 ;;backups settings
 (setq backup-directory-alist '(("." . "~/.saves")))
 
-;;Load theme
-(load-theme 'moe-dark t)
-
 
 ;;packages
 ;;Init packages sources
@@ -66,7 +63,10 @@
 ;(require 'exwm)
 ;(require 'exwm-config)
 ;(exwm-config-default)
- 
+
+;;Load theme
+(load-theme 'moe-dark t)
+
 ;;Discord rich presence
 (require 'elcord)
 (setq elcord-display-buffer-details nil)
